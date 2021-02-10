@@ -30,6 +30,8 @@ support_currency = OrderedDict([
     ('€', 'EUR'),
     ('円', 'JPY'),
     ('JPY', 'JPY'),
+    ('JP¥', 'JPY'),
+    ('JP￥', 'JPY'),
     ('￥', 'JPY')
 ])
 
@@ -64,6 +66,7 @@ def main():
             fp = open(latest_rates)
             rates_json = json.load(fp)
 
+    dollars = float(0)
     for currency in support_currency.keys():
         if currency in popclip_text:
             dollars = float(popclip_text.replace(
