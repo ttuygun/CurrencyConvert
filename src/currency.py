@@ -32,10 +32,11 @@ support_currency = OrderedDict([
     ('JPY', 'JPY'),
     ('JP¥', 'JPY'),
     ('JP￥', 'JPY'),
-    ('￥', 'JPY')
+    ('￥', 'JPY'),
+    ('₺', 'TRY')
 ])
 
-locale.setlocale(locale.LC_ALL, 'zh_CN')
+locale.setlocale(locale.LC_ALL, 'tr_TR')
 fp = None
 dollars = None
 
@@ -73,8 +74,8 @@ def main():
                 currency, '').replace(' ', '')) / rates_json['rates'][support_currency[currency]]
             break
 
-    chinese_yuan = dollars * rates_json['rates']['CNY']
-    print("￥%s" % (locale.format_string('%.2f', chinese_yuan, grouping=True)))
+    chinese_yuan = dollars * rates_json['rates']['TRY']
+    print("₺%s" % (locale.format_string('%.2f', chinese_yuan, grouping=True)))
     fp.close()
 
 if __name__ == '__main__':

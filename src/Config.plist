@@ -8,7 +8,7 @@
 			<key>After</key>
 			<string>preview-result</string>
 			<key>Image File</key>
-			<string>currency_yuan.png</string>
+			<string>currency_tl.png</string>
 			<key>Regular Expression</key>
 			<string>^((USD)|(TWD)|(NT)|(HK\$)|(JP¥)|(JPY)|[\$£€円￥])[ ]?\d+[,\. ]?\d*\b|\d+[,\.]?\d+[ ]?([\$£€円￥]|([ ]?(USD)|(TWD)|(NT)|(HK\$)|(JPY)))$</string>
 			<key>Script Interpreter</key>
@@ -18,7 +18,7 @@
 			<key>Title</key>
 			<dict>
 				<key>en</key>
-				<string>CNY Currency Convert</string>
+				<string>TRY Currency Convert</string>
 			</dict>
 		</dict>
 	</array>
@@ -29,7 +29,7 @@
 	<key>Extension Name</key>
 	<dict>
 		<key>en</key>
-		<string>CNY Currency Convert</string>
+		<string>TRY Currency Convert</string>
 	</dict>
 	<key>Required Software Version</key>
 	<integer>601</integer>
